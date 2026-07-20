@@ -32,6 +32,7 @@
         "pages": [
           "jobs",
           "pipeline",
+          "career-pages",
           "screening"
         ]
       },
@@ -40,17 +41,16 @@
         "icon": "users",
         "pages": [
           "sourcing",
-          "outreach",
-          "career-pages"
+          "outreach"
         ]
       },
       {
         "group": "Integrations",
         "icon": "plug",
         "pages": [
-          "mcp-server",
           "slack",
-          "email-forwarding"
+          "email-forwarding",
+          "mcp-server"
         ]
       },
       {
