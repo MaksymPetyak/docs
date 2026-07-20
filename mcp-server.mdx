@@ -1,0 +1,73 @@
+---
+title: "MCP"
+description: "Use Needle from Claude, ChatGPT, Cursor, or any MCP client."
+icon: "plug"
+keywords: ["MCP", "Model Context Protocol", "Claude integration", "ChatGPT integration", "Cursor", "AI clients"]
+---
+
+Needle exposes its tools over the [Model Context Protocol](https://modelcontextprotocol.io), so you can work your pipeline from any MCP client. The server URL is:
+
+```text
+https://mcp.needle.so/mcp
+```
+
+You'll find these same instructions in the app under **Settings → MCP Server**.
+
+## Connect your client
+
+<Tabs>
+  <Tab title="Claude.ai / ChatGPT">
+    Add Needle as a custom connector. You'll sign in with your Needle account when connecting.
+
+    1. Go to [claude.ai/customize/connectors](https://claude.ai/customize/connectors)
+    2. Click the **\+** button (top right), then **Add custom connector**
+    3. Paste the server URL and save:
+
+    ```text
+    https://mcp.needle.so/mcp
+    ```
+
+    4. Click **Configure** to sign in with Needle
+
+    The steps in ChatGPT are equivalent: add a custom MCP connector with the same URL.
+  </Tab>
+  <Tab title="Claude Code">
+    Run this in your terminal. You'll be prompted to sign in with Needle on first use.
+
+    ```bash
+    claude mcp add --transport http needle https://mcp.needle.so/mcp
+    ```
+  </Tab>
+  <Tab title="Cursor / Windsurf">
+    Add this to your Cursor or Windsurf MCP settings file. You'll be prompted to sign in with Needle on first use.
+
+    ```json
+    {
+      "mcpServers": {
+        "needle": {
+          "url": "https://mcp.needle.so/mcp"
+        }
+      }
+    }
+    ```
+  </Tab>
+</Tabs>
+
+Authentication is OAuth — you sign in with your Needle account and the connection is scoped to your organization. No API keys to manage.
+
+## What your assistant can do
+
+Search candidates and jobs, read pipelines and screening results, move candidates through stages, add notes, draft and send emails, check interview schedules, and manage outreach — enroll candidates, pause a run, edit a queued message.
+
+## Example prompts
+
+Once connected, try asking your assistant:
+
+- "Find and score candidates for my Senior Backend Engineer role."
+- "Show me the top candidates in my Phone Screen stage and move the strongest ahead to Onsite."
+- "Draft outreach to my three best sourced candidates and enroll them in my standard sequence."
+- "Summarize my last interview with Priya and save the notes to her profile."
+
+## Permissions and approvals
+
+MCP access follows the same rules as the app: everything is scoped to your organization, actions are logged on candidate timelines, and outbound messages are created as drafts for you to approve before they send.

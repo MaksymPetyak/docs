@@ -1,0 +1,98 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "theme": "mint",
+  "name": "Needle",
+  "colors": {
+    "primary": "#0A0A0A",
+    "light": "#E5E5E5",
+    "dark": "#0A0A0A"
+  },
+  "favicon": "/favicon.svg",
+  "navigation": {
+    "pages": [
+      {
+        "group": "Getting Started",
+        "pages": [
+          "index",
+          "quickstart"
+        ]
+      }
+    ],
+    "groups": [
+      {
+        "group": "Getting started",
+        "pages": [
+          "index"
+        ],
+        "icon": "rocket"
+      },
+      {
+        "group": "Core workflows",
+        "icon": "workflow",
+        "pages": [
+          "jobs",
+          "pipeline",
+          "screening"
+        ]
+      },
+      {
+        "group": "Candidate engagement",
+        "icon": "users",
+        "pages": [
+          "sourcing",
+          "outreach",
+          "career-pages"
+        ]
+      },
+      {
+        "group": "Integrations",
+        "icon": "plug",
+        "pages": [
+          "mcp-server",
+          "slack",
+          "email-forwarding"
+        ]
+      },
+      {
+        "group": "Resources",
+        "icon": "book-open",
+        "pages": [
+          "feedback"
+        ]
+      }
+    ]
+  },
+  "logo": {
+    "light": "/logo/light.svg",
+    "dark": "/logo/dark.svg"
+  },
+  "navbar": {
+    "links": [
+      {
+        "label": "Support",
+        "href": "mailto:support@needle.so"
+      }
+    ],
+    "primary": {
+      "type": "button",
+      "label": "Open Needle",
+      "href": "https://app.needle.so"
+    }
+  },
+  "contextual": {
+    "options": [
+      "copy",
+      "view",
+      "chatgpt",
+      "claude",
+      "perplexity",
+      "mcp",
+      "cursor",
+      "vscode"
+    ]
+  },
+  "description": "Documentation for Needle, the AI-native applicant tracking system.",
+  "icons": {
+    "library": "lucide"
+  }
+}
