@@ -1,23 +1,36 @@
 ---
 title: "Screening"
 description: "How applicants are evaluated, and where to see the results."
-icon: "filter"
+icon:
+  style: "solid"
+  name: "filter"
+  library: "fontawesome"
 keywords: ["candidate screening", "AI screening", "CV evaluation", "resume screening", "automated screening"]
 ---
 
-Every inbound applicant is screened automatically when they apply. There's nothing to configure beyond the job's hiring criteria.
+Every inbound applicant is screened automatically when they apply. There's nothing to configure beyond the [job's hiring criteria](/jobs#writing-good-criteria).
 
 ## What the agent does
 
 It reads the CV and the answers to your application questions, then evaluates the candidate against each criterion on the job. The result is a per-criterion verdict with a short explanation grounded in the candidate's actual background.
 
+<Info>
+  Screening runs on every inbound source: [career page](/career-pages) applications, [forwarded emails](/email-forwarding), and manually added applicants.
+</Info>
+
 ## Where to see results
 
-Open the job's **Review** view — each applicant is listed with their assessment attached. The same assessment also lives on the candidate's profile.
+Open the job's **Review** view — each applicant is listed with their assessment attached. The same assessment also lives on the candidate's [profile timeline](/pipeline#the-timeline).
 
 ## Acting on results
 
-From the Review view, advance an applicant into the pipeline or reject them. Screening never rejects anyone on its own; it's input for your decision, and the full CV and answers are always one click away.
+From the Review view, advance an applicant into the pipeline or reject them.
+
+<Warning>
+  Screening never rejects anyone on its own — it's input for your decision. The full CV and application answers are always one click away.
+</Warning>
+
+You can also handle screening from [Slack](/slack) ("show me the top applicants for backend engineer") or [MCP](/mcp-server) ("move the strongest phone-screen candidates to onsite").
 
 ## Improving results
 
